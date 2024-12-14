@@ -164,7 +164,7 @@ nav .wrapper {
 
 .wrapper .links li .dropdown {
   position: absolute;
-  background:  var(--black-color-light);
+  background: var(--black-color-light);
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -258,7 +258,7 @@ nav .wrapper {
 .wrapper .btns {
   display: flex;
   align-items: center;
-  
+
 }
 
 .wrapper .btn {
@@ -279,18 +279,24 @@ nav .wrapper {
 }
 
 @media (max-height:1222px) {
+  nav .wrapper {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
   .megalinks li a {
     font-size: 14px;
   }
+
   .megaMenu .row {
     line-height: 25px;
-  } 
+  }
 }
 
 @media (max-width: 1160px) {
   .wrapper .logo {
-    font-size: 25px;
+    font-size: 30px;
   }
+
   .wrapper .btn {
     display: block;
   }
@@ -311,15 +317,15 @@ nav .wrapper {
     transition: all 0.3s ease;
   }
 
-  #menu-btn:checked ~ .links {
+  #menu-btn:checked~.links {
     left: 0%;
   }
 
-  #menu-btn:checked ~ .btns {
+  #menu-btn:checked~.btns {
     display: none;
   }
 
-  #close-btn:checked ~ .btns {
+  #close-btn:checked~.btns {
     display: flex;
   }
 
@@ -365,7 +371,7 @@ nav .wrapper {
     transition: all 0.3s ease;
   }
 
-  #dropdown:checked ~ .dropdown {
+  #dropdown:checked~.dropdown {
     max-height: 100%;
   }
 
@@ -389,7 +395,7 @@ nav .wrapper {
     transition: all 0.3s ease;
   }
 
-  #mega:checked ~ .megaMenu {
+  #mega:checked~.megaMenu {
     max-height: 100%;
   }
 
@@ -456,10 +462,17 @@ h1 {
   text-align: center;
   margin-bottom: 5rem;
 }
+
 @media (max-height: 710px) {
   h1 {
-    margin-top: 100px;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-height: 560px) {
+  h1 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
   }
 }
 h6 {
@@ -469,7 +482,8 @@ h6 {
   text-align: center;
   margin-bottom: 5rem;
 }
-h4{
+
+h4 {
   font-size: 70px;
   margin-top: 1px;
   color: #fff;
@@ -477,17 +491,21 @@ h4{
   margin-bottom: 1px;
   display: none;
 }
- @media (max-width: 1100px) {
-  h6{display: none;
+
+@media (max-width: 1100px) {
+  h6 {
+    display: none;
   }
 
-  h4{
+  h4 {
     display: block;
   }
-  .btn_container{
+
+  .btn_container {
     margin-top: 3rem;
   }
 }
+
 @media (max-width:1050px) {
   h4 {
     font-size: 60px;
@@ -525,6 +543,12 @@ button {
   position: relative;
   overflow: hidden;
 
+}
+
+@media (max-height: 710px) {
+  button {
+    margin: 10px 10px;
+  }
 }
 
 span {
@@ -740,9 +764,10 @@ h5 {
 }
 
 @media (max-width:550px) {
- iframe {
+  iframe {
     width: 340px;
   }
+
   .frame {
     width: 340px;
     height: 370px;

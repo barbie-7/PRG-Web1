@@ -263,17 +263,22 @@ nav .wrapper {
 }
 
 @media (max-height:1222px) {
+  nav .wrapper {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
   .megalinks li a {
     font-size: 14px;
   }
+
   .megaMenu .row {
     line-height: 25px;
-  } 
+  }
 }
 
 @media (max-width: 1160px) {
   .wrapper .logo {
-    font-size: 25px;
+    font-size: 30px;
   }
   .wrapper .btn {
     display: block;
@@ -675,15 +680,6 @@ tr {
   }
 
 
-@media only screen and (-webkit-min-device-pixel-ratio:3) {
-  .navbar {
-    -webkit-backdrop-filter: blur(50px);
-  }
-
-  .header {
-    -webkit-backdrop-filter: blur(50px);
-  }
-}
 
 @media (max-width: 375px) {
   .footerP {

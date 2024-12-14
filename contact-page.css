@@ -1,35 +1,36 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins',sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--scroll-psadding, 5rem);
-    background-color: #191919;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-psadding, 5rem);
+  background-color: #191919;
 }
 
 .primary-navigation {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    font-size: 1.5rem;
-    background: var(--clr-primary-400);
-  }
-
-.banner{
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(imgLouw2.jpg);
-    background-position: center;
-    background-size: cover;
-
-    animation: fade-in 0.5s;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-size: 1.5rem;
+  background: var(--clr-primary-400);
 }
+
+.banner {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(imgLouw2.jpg);
+  background-position: center;
+  background-size: cover;
+
+  animation: fade-in 0.5s;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -60,6 +61,7 @@ html{
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+
 @media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
@@ -165,7 +167,7 @@ nav .wrapper {
 
 .wrapper .links li .dropdown {
   position: absolute;
-  background:  var(--black-color-light);
+  background: var(--black-color-light);
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -259,7 +261,7 @@ nav .wrapper {
 .wrapper .btns {
   display: flex;
   align-items: center;
-  
+
 }
 
 .wrapper .btn {
@@ -280,18 +282,25 @@ nav .wrapper {
 }
 
 @media (max-height:1222px) {
+  nav .wrapper {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
   .megalinks li a {
     font-size: 14px;
   }
+
   .megaMenu .row {
     line-height: 25px;
-  } 
+  }
 }
 
 @media (max-width: 1160px) {
   .wrapper .logo {
-    font-size: 25px;
+    font-size: 30px;
   }
+
   .wrapper .btn {
     display: block;
   }
@@ -312,15 +321,15 @@ nav .wrapper {
     transition: all 0.3s ease;
   }
 
-  #menu-btn:checked ~ .links {
+  #menu-btn:checked~.links {
     left: 0%;
   }
 
-  #menu-btn:checked ~ .btns {
+  #menu-btn:checked~.btns {
     display: none;
   }
 
-  #close-btn:checked ~ .btns {
+  #close-btn:checked~.btns {
     display: flex;
   }
 
@@ -366,7 +375,7 @@ nav .wrapper {
     transition: all 0.3s ease;
   }
 
-  #dropdown:checked ~ .dropdown {
+  #dropdown:checked~.dropdown {
     max-height: 100%;
   }
 
@@ -390,7 +399,7 @@ nav .wrapper {
     transition: all 0.3s ease;
   }
 
-  #mega:checked ~ .megaMenu {
+  #mega:checked~.megaMenu {
     max-height: 100%;
   }
 
@@ -437,319 +446,280 @@ nav .wrapper {
     border-radius: 10px;
   }
 }
-.contact-container{
-    display: block;
-}
-.services p{
-    color: #c1c1c1;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 15px;
-    margin-bottom: 100px;
-}
-.contact{
-    margin-top: 20%;
-    display: flex;
-    justify-content: center;
-}
-.contact-row{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-}
-.contact-sub{
-    color: white;
-    
-    position: relative;
-    font-size: 50px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    padding-bottom: 20px;
-    color: white;
-}
-.contact-container{
-    padding: 10px 5%;
-}
-.contact-left{
-   flex-basis: 50%; 
-}
-.contact-right{
-    flex-basis: 50%;
-    }
 
-.contact-left p i{
-    color: white;
-    font-size: 25px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-}
-.contact-icons{
-    margin-top: 30px;
-    
-}
-.contact-left p{
-    color: #c1c1c1;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px; 
-}
-.contact-icons a{
-    text-decoration: none;
-    font-size: 35px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s ;
-}
-.contact-icons a:hover{
-    color: var(--body-color);
-    transform: translateY(-5px);
-}
-.btn-sumbit{
-    display: inline-block;
-    background: var(--black-color);
+.contact-container {
+  display: block;
 }
 
-.contact-right form{
-    width: 100%;
+.services p {
+  color: #c1c1c1;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 15px;
+  margin-bottom: 100px;
 }
 
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: var(--black-color);
-    padding: 15px;
-    margin: 15px 0;
-    color: white;
-    font-size: 18px;
-    border-radius: 6px;
+.contact {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
 }
 
-.contact-form .btn-sumbit{
-    float: right;
-    background: var(--black-color);
-    color: whitesmoke;
-    border: none;
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: background;
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.contact-form .btn-sumbit:hover{
-    background: linear-gradient(90deg,#08ff08, #50e3fc, #bc13fe, #03a9f4, #0ff0fc );
-    background-size: 500%;
-    z-index: 1;
-    animation: blink 7s linear infinite;
+.contact-sub {
+  color: white;
+
+  position: relative;
+  font-size: 50px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: white;
 }
 
-@keyframes blink{
-    from{
-        background-position: 0%;
-    }
-    to{
-        background-position: 500%;
-    }
+.contact-container {
+  padding: 10px 5%;
 }
 
-.contact-form .btn-sumbit::after{
-    content: "";
-    position: absolute;
-    left:-10px;
-    right: -10px;
-    top:-10px;
-    bottom: -10px;
-    background: inherit;
-    border-radius: 40px;
-    filter: blur(50px);
-    opacity: 0;
+.contact-left {
+  flex-basis: 50%;
 }
 
-.contact-form .btn-sumbit:hover::after{
-    opacity: 1;
-    z-index: -1;
+.contact-right {
+  flex-basis: 50%;
 }
 
-
-
-
-
-
-
-#msg{
-    color: #61b752 ;
-    margin-top: 5px;
-    display: block;
+.contact-left p i {
+  color: white;
+  font-size: 25px;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
+.contact-icons {
+  margin-top: 30px;
 
+}
 
+.contact-left p {
+  color: #c1c1c1;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+}
 
+.contact-icons a {
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
 
-  
+.contact-icons a:hover {
+  color: var(--body-color);
+  transform: translateY(-5px);
+}
 
+.btn-sumbit {
+  display: inline-block;
+  background: var(--black-color);
+}
 
+.contact-right form {
+  width: 100%;
+}
 
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: var(--black-color);
+  padding: 15px;
+  margin: 15px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+}
 
+.contact-form .btn-sumbit {
+  float: right;
+  background: var(--black-color);
+  color: whitesmoke;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
 
-  
-  button{
-     
-      
-      position: relative;
-  
+.contact-form .btn-sumbit:hover {
+  background: linear-gradient(90deg, #08ff08, #50e3fc, #bc13fe, #03a9f4, #0ff0fc);
+  background-size: 500%;
+  z-index: 1;
+  animation: blink 7s linear infinite;
+}
+
+@keyframes blink {
+  from {
+    background-position: 0%;
   }
-  
- 
 
-  .loader {
-    position: fixed;
-    inset: 0;
-    z-index: 5;
-    background-color: white;
-    transform: translatex(0%);
-    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1) 0.2s;
-    will-change: transform;
+  to {
+    background-position: 500%;
   }
-  
-  .a,
-  .b,
-  .c {
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition-property: opacity, visibility;
-    transition-duration: 0.5s;
-    transition-delay: -0.1s;
-    transition-timing-function: ease-in-out;
-    height: 100%;
-  }
-  
-  .ac {
-    margin: auto;
-  }
-  
-  [data-route=c] .c, [data-route=b] .b, [data-route=a] .a {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-    transition: opacity 0.5s ease-in 0.7s;
-  }
- 
-  footer {
-    position: relative;
-    height: 9px;
-    width: 100%;
-    
+}
+
+.contact-form .btn-sumbit::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  background: inherit;
+  border-radius: 40px;
+  filter: blur(50px);
+  opacity: 0;
+}
+
+.contact-form .btn-sumbit:hover::after {
+  opacity: 1;
+  z-index: -1;
+}
+
+#msg {
+  color: #61b752;
+  margin-top: 5px;
+  display: block;
+}
+
+button {
+  position: relative;
+}
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background-color: white;
+  transform: translatex(0%);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1) 0.2s;
+  will-change: transform;
+}
+.a,
+.b,
+.c {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s;
+  transition-delay: -0.1s;
+  transition-timing-function: ease-in-out;
+  height: 100%;
+}
+.ac {
+  margin: auto;
+}
+
+[data-route=c] .c,
+[data-route=b] .b,
+[data-route=a] .a {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: opacity 0.5s ease-in 0.7s;
+}
+
+footer {
+  position: relative;
+  height: 9px;
+  width: 100%;
+
 }
 
 p.copyright {
-    position: absolute;
-    width: 100%;
-    color: #000000;
-    line-height: 40px;
-    font-size: 0.7em;
-    text-align: center;
-    background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  color: #000000;
+  line-height: 40px;
+  font-size: 0.7em;
+  text-align: center;
+  background-color: #ffffff;
 }
-  
-
-
-
-
-  
-  
-  
- 
-  
- 
- 
-  
-
-
-
-
-  
-  
-
- 
-
 
 @media (max-width: 915px) {
-    .contact-row{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 500px;
-     }
-     .contact-left{
-        flex-basis: 50%; 
-        width: 500px;
-     }
-     .contact-right{
-         flex-basis: 50%;
-         width: 500px;
-         }
-         .contact{
-            margin-top: 15%;
-        }   
-}
-
-  
-@media (max-width: 550px){
-   
-    .contact-sub{
-        margin-top: 35px
-    }
-}
-@media (max-width: 555px) {
-    .contact-row{
-        width: 320px;
-     }
-     .contact-left{
-        flex-basis: 50%; 
-        width: 320px;
-     }
-     .contact-right{
-         flex-basis: 50%;
-         width: 320px;
-         }
-         .contact-left p{
-            font-size: 14px; 
-        }   
-        .contact-left p i{
-            font-size: 21px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-}   
-
-
-
-
-
-
-
-@media only screen and (-webkit-min-device-pixel-ratio:3){
-    .navbar{
-        -webkit-backdrop-filter: blur(50px);
-    }
-
-    .header{
-        -webkit-backdrop-filter: blur(50px);
-    } 
-}
-
-@media (max-width: 375px) {
-    .footerP{
-      font-size: 13px;
-    }
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px;
   }
+
+  .contact-left {
+    flex-basis: 50%;
+    width: 500px;
+  }
+
+  .contact-right {
+    flex-basis: 50%;
+    width: 500px;
+  }
+
+  .contact {
+    margin-top: 18%;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .contact-sub {
+    margin-top: 35px
+  }
+}
+
+@media (max-width: 555px) {
+  .contact-row {
+    width: 320px;
+  }
+
+  .contact-left {
+    flex-basis: 50%;
+    width: 320px;
+  }
+
+  .contact-right {
+    flex-basis: 50%;
+    width: 320px;
+  }
+
+  .contact-left p {
+    font-size: 14px;
+  }
+
+  .contact-left p i {
+    font-size: 21px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .footerP {
+    font-size: 13px;
+  }
+}
